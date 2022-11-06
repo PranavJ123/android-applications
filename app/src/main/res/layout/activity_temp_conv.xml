@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    tools:context=".TempConv">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTemp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textCursorDrawable="@color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertedText"
+        android:text="0.00"
+        android:textSize="34sp"
+        android:textColor="@color/black"/>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbtn1"
+        android:text="Celcius"
+        android:checked="true"
+        android:buttonTint="@color/black"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbtn2"
+        android:buttonTint="@color/black"
+        android:text="Fahrenhiet"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_gravity="center"
+        android:text="CONVERT"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:backgroundTint="@color/grey"/>
+
+</LinearLayout>
